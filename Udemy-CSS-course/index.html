@@ -2,28 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Controlling height and width of the elements</title>
-    <style>
-      body{
-        width: 100%;
-      }
-      .parent{
-        width:50%;
-        height: 200px;
-        background-color:green;
-      }
-      .child{
-        height: 100px;
-        width: 100px;
-        background-color:blue ;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="parent">
-      <div class="child">
+    <title>display:block vs inline vs inline-block</title>
+    <!--  @inline vertical space nahi leta naam se bata raha hai inline.
+          @block poora space leta hai or next line se start karega.
+          @inline-block ab inline bhi hoga aur block bhi matlab utni space lega jitni need hogi in a line at the same time vertical space bhi lega.
 
-      </div>
-    </div>
-  </body>
+          div is a block element, a, img tag is inline element by default but we can change their behaviour using display property.
+    -->
+    <style>
+      div,a, img{
+       border: 1px solid black;
+       padding:5px;
+       margin:5px;
+      }
+     </style>
+    </head>
+    <body>
+     <div class="item1">item1</div>
+     <div class="item2">item2</div>
+     <div class="item3">item3</div>
+     <a >inline</a>
+     <img alt="image"/>
+    </body>
 </html>
