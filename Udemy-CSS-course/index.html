@@ -2,26 +2,34 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>display:block vs inline vs inline-block</title>
-    <!--  @inline vertical space nahi leta naam se bata raha hai inline.
-          @block poora space leta hai or next line se start karega.
-          @inline-block ab inline bhi hoga aur block bhi matlab utni space lega jitni need hogi in a line at the same time vertical space bhi lega.
-
-          div is a block element, a, img tag is inline element by default but we can change their behaviour using display property.
-    -->
+    <title>Center Elements</title>
     <style>
-      div,a, img{
-       border: 1px solid black;
-       padding:5px;
-       margin:5px;
+      body{
+        display: flex;
+      }
+      div{
+        height: 200px;
+        width:50%;
+        background-color:rgb(129, 194, 194);
+        margin:auto;
+        display:flex;
+       /* justify-content: center; /* Center horizontally */
+       /*   align-items: center; /* Center vertically */ 
+      }
+      p{
+        height: 100px;
+        width:50%;
+        background-color: rgb(153, 153, 153);
+        margin:auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
       }
      </style>
     </head>
     <body>
-     <div class="item1">item1</div>
-     <div class="item2">item2</div>
-     <div class="item3">item3</div>
-     <a >inline</a>
-     <img alt="image"/>
+      <div >
+        <p>This is a paragraph</p>
+      </div>
     </body>
 </html>
