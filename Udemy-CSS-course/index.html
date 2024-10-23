@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <title>Center Elements</title>
     <style>
-      body{
-        display: flex;
+      .left{
+        text-align: left;
+        font-weight:600;/* to make text bold*/
       }
-      div{
-        height: 200px;
-        width:50%;
-        background-color:rgb(129, 194, 194);
-        margin:auto;
-        display:flex;
-        border-radius:50%;
-        /* The div is a perfect circle because it uses border-radius: 50%. This value means the border radius is set to 50% of the element's width and height, creating a circle regardless of the element's dimensions as long as it has equal width and height. */
+      .center{
+        text-align: center;
       }
-      p{
-        height: 100px;
-        width:50%;
-        background-color: rgb(153, 153, 153);
-        margin:auto;
-        display: flex;
-        justify-content:center;
-        align-items:center;
+      .right{
+        text-align:right;
+        color:blue;
       }
+      .para{
+        text-align:justify; /*for equal spacing between the text*/
+      }
+      .text-enhanced{
+        /* text-decoration:underline;
+        text-decoration: overline;
+        text-decoration:line-through; */
+        text-decoration: underline wavy pink 10px;
+                        /*line, style, color, thickness  */
+      }
+      
      </style>
     </head>
     <body>
-      <div >
-        <p>This is a paragraph</p>
+     <p class="left">text:align-left</p>
+     <div class="center">
+      <div>
+        <p >text:align-center</p>
       </div>
+     </div>
+     <p class="right">text:align-right</p>
+     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est facilis quam suscipit aperiam? Similique eos ullam nulla. Perferendis ex laudantium saepe eum magni magnam voluptatum cum eligendi veritatis voluptate ipsa, suscipit expedita consequuntur illo, consequatur repellat exercitationem obcaecati molestiae, commodi recusandae nisi nostrum nam! Accusantium ad consequatur voluptas consectetur placeat ipsam repellendus ullam! Esse, quasi omnis sunt praesentium dicta explicabo! Cumque beatae, ea nostrum odit maxime, a, temporibus tempore autem laudantium quia non eaque excepturi tenetur. Soluta mollitia consectetur repellat maxime architecto adipisci ipsam harum corrupti natus. Sint, consectetur repellat ipsum recusandae officiis ducimus laboriosam impedit ex accusantium itaque.</p>
+     <p class="text-enhanced">enhanced text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis!</p>
     </body>
 </html>
