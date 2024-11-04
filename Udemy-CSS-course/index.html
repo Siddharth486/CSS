@@ -4,39 +4,31 @@
     <meta charset="UTF-8">
     <title>Center Elements</title>
     <style>
-      .left{
-        text-align: left;
-        font-weight:600;/* to make text bold*/
+      body{
+        background-image: url('../brandenburgertor.jpg');
+        background-repeat:no-repeat;
+        /*background-size:contain; /*image gets contained in an element*/
+        background-size:cover; /*covers the entire screen*/
+        /* background-attachment: scroll; background-image will also scroll on scrolling */ 
+        background-attachment:fixed; /*background image will now be fixed not scroll*/
       }
-      .center{
-        text-align: center;
+      div{
+        border: 5px solid black;
+        width:20%;
+        height: 200px;
+        margin:5px;
       }
-      .right{
-        text-align:right;
-        color:blue;
+      .alpha{
+        background-color: rgba(100, 0, 0, 0.2); //* rgba(red, green ,blue, alpha_value) alpha_value lies from 0 to 1 where 0 is the lightest and 1 is the darkest*/
       }
-      .para{
-        text-align:justify; /*for equal spacing between the text*/
+      .opacity{
+        background-color: blue;
+        opacity: 0.3; /*value lies between 0 to 1 ,border bhi light hoga saath*/
       }
-      .text-enhanced{
-        /* text-decoration:underline;
-        text-decoration: overline;
-        text-decoration:line-through; */
-        text-decoration: underline wavy pink 10px;
-                        /*line, style, color, thickness  */
-      }
-      
-     </style>
+    </style>
     </head>
     <body>
-     <p class="left">text:align-left</p>
-     <div class="center">
-      <div>
-        <p >text:align-center</p>
-      </div>
-     </div>
-     <p class="right">text:align-right</p>
-     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est facilis quam suscipit aperiam? Similique eos ullam nulla. Perferendis ex laudantium saepe eum magni magnam voluptatum cum eligendi veritatis voluptate ipsa, suscipit expedita consequuntur illo, consequatur repellat exercitationem obcaecati molestiae, commodi recusandae nisi nostrum nam! Accusantium ad consequatur voluptas consectetur placeat ipsam repellendus ullam! Esse, quasi omnis sunt praesentium dicta explicabo! Cumque beatae, ea nostrum odit maxime, a, temporibus tempore autem laudantium quia non eaque excepturi tenetur. Soluta mollitia consectetur repellat maxime architecto adipisci ipsam harum corrupti natus. Sint, consectetur repellat ipsum recusandae officiis ducimus laboriosam impedit ex accusantium itaque.</p>
-     <p class="text-enhanced">enhanced text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis!</p>
+     <div class="alpha"></div>
+     <div class="opacity"></div>
     </body>
 </html>
