@@ -4,31 +4,26 @@
     <meta charset="UTF-8">
     <title>Center Elements</title>
     <style>
-      body{
-        background-image: url('../brandenburgertor.jpg');
-        background-repeat:no-repeat;
-        /*background-size:contain; /*image gets contained in an element*/
-        background-size:cover; /*covers the entire screen*/
-        /* background-attachment: scroll; background-image will also scroll on scrolling */ 
-        background-attachment:fixed; /*background image will now be fixed not scroll*/
-      }
       div{
         border: 5px solid black;
         width:20%;
         height: 200px;
         margin:5px;
       }
-      .alpha{
-        background-color: rgba(100, 0, 0, 0.2); //* rgba(red, green ,blue, alpha_value) alpha_value lies from 0 to 1 where 0 is the lightest and 1 is the darkest*/
+      /*in css gradient is treated as image*/
+      .linear__gradient{
+        background-image: linear-gradient(to top left, red, blue, green, orange, pink);
+                                         /*position, colors separated with comma*/
       }
-      .opacity{
-        background-color: blue;
-        opacity: 0.3; /*value lies between 0 to 1 ,border bhi light hoga saath*/
+      .radial__gradient{
+        background-image: radial-gradient(black 30%, white 31%, transparent 45%), url('../universe.jpg');
+        /* adding effect on image */
       }
+    
     </style>
     </head>
     <body>
-     <div class="alpha"></div>
-     <div class="opacity"></div>
+      <div class="linear__gradient"></div>
+        <div class="radial__gradient"></div>
     </body>
 </html>
