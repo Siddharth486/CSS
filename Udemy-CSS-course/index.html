@@ -4,72 +4,19 @@
     <meta charset="UTF-8">
     <title>Center Elements</title>
     <style>
-      /* 
-      ** Specificity in order **
-      ** 1. DESCENDANT SELECTOR
-      ** 2. CHILD SELECTOR > (greater than symbol)
-      ** 3. NEXT-SIBLING +
-      ** 4. SUBSEQUENT SIBLING ~
-      */
-
-      /* Child Selector STARTS */
-      /* Works for direct children */
-      header > h2{
-        color:aqua;
-      }
-      header.container > h2{
-        color:green;
-      }
-      /* uncomment it and see */
-      article > h2{
-        color:darkgrey;
-      }
-      header> article> h2{
-        color: violet;
-      }
-      /* specificity applies here therefore color:violet applies */
-      /* Child Selector ENDS */
-
-      /* DESCENDANT SELECTOR STARTS*/
-      /* ALL DESCENDANT  will get the color orange whether they are in other parents tag like in article tag*/
-      header h2{
-        color:orange;
-      }
-      /* DESCENDANT SELECTOR ENDS*/
-
-      /* subsequent sibling */
-      h2 ~ p{
-        color:rgb(185, 113, 113)
-      }
-
-      /* next sibling */
-      h2+p{
-        color:rgb(165, 163, 56)
-      }
-
+     input[type="text"]{
+      background: lightblue;
+     }
+     button[type="submit"]{
+      color:pink
+     }
     </style>
     </head>
     <body>
-      <header class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quisquam.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-      </header>
-      <header>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quisquam.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-      </header>
-      <header>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quisquam.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-      </header>
-      <header>
-        <article>
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quisquam.</h2>
-        </article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus quas accusamus est odio laboriosam consequuntur quo facilis aliquid sed!</p>
-      </header>
+      <form>
+        <input type="text" placeholder="Enter your Name"/>
+        <input type="email" placeholder="Enter your Email"/>
+        <button type="submit">Submit</button>
+      </form>
     </body>
 </html>
