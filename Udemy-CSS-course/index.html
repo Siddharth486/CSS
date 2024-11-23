@@ -5,7 +5,6 @@
     <title>Center Elements</title>
     <style>
       /* 
-      ** Specificity in order **
       ** 1. DESCENDANT SELECTOR
       ** 2. CHILD SELECTOR > (greater than symbol)
       ** 3. NEXT-SIBLING +
@@ -38,15 +37,16 @@
       /* DESCENDANT SELECTOR ENDS*/
 
       /* subsequent sibling */
+      /* all siblings after h2 will become rgb(185, 113, 113) */
       h2 ~ p{
-        color:rgb(185, 113, 113)
+        color:rgb(185, 113, 113);
       }
 
       /* next sibling */
+      /* sibling just next to h2  will become rgb(165, 163, 56)*/
       h2+p{
-        color:rgb(165, 163, 56)
+        color:rgb(165, 163, 56);
       }
-
     </style>
     </head>
     <body>
