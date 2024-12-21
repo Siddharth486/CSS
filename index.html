@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+</head>
+<body>
+  <h1>DSA</h1>
+  <script>
+    const nonRepeatingString= (inputString)=>{
+      let newString = '';
+      // let i=0;
+      // for vs while using continue
+      for(let i=0; i<inputString.length; i++){
+        if(inputString[i]===inputString[i+1]) continue;
+          else newString+=inputString[i];
+      }
+      // or better approach
+      for(let i=0; i<inputString.length; i++) 
+        if(inputString[i]!=inputString[i+1]) newString+=inputString[i];
+      
+      
+      // while(i<inputString.length){
+      //     if(inputString[i]===inputString[i+1]) continue;
+      //     else newString+=inputString[i];
+      //     i++;
+      // }
+      return newString;
+  };
+  console.log(nonRepeatingString('yaaangg'));
+  
+  </script>
+</body>
+</html>
