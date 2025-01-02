@@ -6,12 +6,14 @@ body{
   display:flex; /***all items will be arrange according to main axis(for reference x axis)**/
   /* align-items:center; *for cross axis */
   height: 400px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center; /****for main axis**/
   align-items:center; /****for cross axis in center**/
   align-content: center; /**for whole content in center**/
 }
+
 .box{
+  flex-shrink:1;
   height: 100px;
   width: 100px;
   background-color: blue;
@@ -19,4 +21,10 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media(max-width:500px){
+  .body{
+    flex-wrap:wrap;
+  }
 }
