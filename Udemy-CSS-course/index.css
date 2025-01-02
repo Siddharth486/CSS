@@ -58,10 +58,62 @@ header>a{
 header>a:hover{
   scale:1.1;
 }
+/** ****Advance concept using min function**/
 .video_player{
-  width:min(500px, 98%); /** minimum between the two values one will apply i.e @minimum 500px legi space agar 500px se upar hai screen size varna 500px se kam par minimum width set hogi 98% **/
+  width:min(500px, 98%);
+  /** minimum of the two values one will apply i.e @minimum 500px legi space agar 500px se upar hai screen size varna 500px se kam par minimum width set hogi 98% **/
   aspect-ratio:16 / 9;/**width/height***/ /** humne use kari instead of height   jaise jaise screen choti badi hogi vaise vaise utni width or height leti jayegi dynamically/responsively**/
   border-radius:15px;
+}
+
+/***using min-width and max-width***/
+/* .video_player{
+  min-width:250px;
+  max-width:300px;
+} */
+
+.card{
+  height: 200px;
+  width:200px;
+  display: inline-block;
+  box-sizing:border-box;
+  border: 1px solid black;
+  padding: 1.2em .5em;
+  margin: .5em;
+  border-radius: 10px;
+}
+
+div.card:nth-child(2){
+  background:purple;
+  color:white;
+  border: none !important;
+}
+
+div.card:nth-child(3){
+  background:black;
+  color:white;
+}
+
+form{
+  margin-top: 10px;
+}
+
+form >input[type='text'],input[type='submit']{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: .8em;
+  border-radius: 15px;
+  font-size: 11px;
+  background-color: lightgray;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+form>input[type='submit']{
+  background-color: var(--button-color);
+  color: white;
+  width: 100px;
 }
 
 div.content{
@@ -89,16 +141,11 @@ div.content>button{
   background-image: linear-gradient(90deg, #b869c9, #6643bd);
 }
 
-div.cards{
+/* div.cards{
   display: flex;
-}
+} */
 
-div.cards> div{
-  border: 1px solid black;
-  padding: 1.2em .5em;
-  margin: .5em;
-  border-radius: 10px;
-}
+
 
 div.products__container{
   /* text-align: center; */
@@ -110,39 +157,8 @@ div.cards>div.card>p{
   font-size:12px;
 }
 
-div.card2{
-  background:purple;
-  color:white;
-  border: none !important;
-}
-
-div.card3{
-  background:black;
-  color:white;
-}
 
 div.login__page{
   /* text-align: center; */
 }
 
-form{
-  margin-top: 10px;
-}
-
-form >input[type='text'],input[type='submit']{
-  display: block;
-  margin: 0 auto;
-  border: none;
-  padding: .8em;
-  border-radius: 15px;
-  font-size: 11px;
-  background-color: lightgray;
-  margin-bottom: 5px;
-  width: 200px;
-}
-
-form>input[type='submit']{
-  background-color: var(--button-color);
-  color: white;
-  width: 100px;
-}
