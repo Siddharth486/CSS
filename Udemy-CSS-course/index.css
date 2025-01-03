@@ -3,28 +3,35 @@
   padding:0;
 }
 body{
-  display:flex; /***all items will be arrange according to main axis(for reference x axis)**/
-  /* align-items:center; *for cross axis */
+  display: flex;
   height: 400px;
-  /* flex-wrap: wrap; */
-  justify-content: center; /****for main axis**/
-  align-items:center; /****for cross axis in center**/
-  align-content: center; /**for whole content in center**/
+  border: 1px solid black;
+  gap:10px;
 }
 
 .box{
   flex-shrink:1;
-  height: 100px;
-  width: 100px;
+  min-width: 100px;
+  height: 200px;
+  width: 200px;
   background-color: blue;
-  margin:10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media(max-width:500px){
-  .body{
+@media(width<400px){
+  /* or */
+  /* @media(max-width:400px) */
+  body{
     flex-wrap:wrap;
+  }
+}
+
+@media(width>400px){
+    /* or */
+  /* @media(min-width:400px) */
+  body{
+    background: rgb(76, 188, 192);
   }
 }
