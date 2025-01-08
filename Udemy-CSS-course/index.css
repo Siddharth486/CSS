@@ -19,7 +19,7 @@ body {
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; /** responsive unit 1fragment takes space according to it's parent  but if replace by fix unit:200px 200px 200px 200px then it will be not responsive**/
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px; 
 }
 
 .card {
