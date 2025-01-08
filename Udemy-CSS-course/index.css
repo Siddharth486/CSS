@@ -13,13 +13,26 @@ html {
 body {
   padding: min(10px, 7%);
 }
+/*************@grid basics
 
+  /* **grid-template-columns :column size and content */
+
+  /* **grid-template-rows :rows size and content */
+
+  /* **grid-auto-columns :automatic column size */
+
+  /* **grid-auto-rows :automatic row size */
+
+  /* **1fr fraction=responsive unit */
+
+  /* **gap between rows and columns */
 .container {
   border: 5px solid black;
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /** responsive unit 1fragment takes space according to it's parent  but if replace by fix unit:200px 200px 200px 200px then it will be not responsive**/
-  grid-template-rows: 200px 200px 200px; 
+  grid-template-columns: 1fr 1fr 1fr ; /**/
+  /* grid-template-rows: 200px 200px 200px;  */
+  grid-auto-rows: 300px; /***when data coming from backend to show the blocks*/
 }
 
 .card {
