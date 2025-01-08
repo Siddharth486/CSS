@@ -1,34 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-  margin:0;
-  padding:0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", serif;
   font-style: normal;
 }
-html{
-  text-align:center;
-  color:white;
+html {
+  text-align: center;
+  color: white;
 }
 
-body{
-  padding:min(50px, 7%);
-  background-color: rgb(15, 15, 15);
+body {
+  padding: min(10px, 7%);
 }
 
-.grid-container{
-  display:grid;
-  gap:10px;
-  border: 1px solid red;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /***how many columns need to be adjust, minimum 300px and maximum 1fragment***/
+.container {
+  border: 5px solid black;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /** responsive unit 1fragment takes space according to it's parent  but if replace by fix unit:200px 200px 200px 200px then it will be not responsive**/
+  grid-template-rows: 200px 200px 200px;
+}
+
+.card {
+  display: flex;
   justify-content: center;
-}
-
-.card{
-  background: rgb(70, 69, 69);
-  padding:1em;
-  border-radius:10px;
-};
-
-.box{
-  background: blue;
+  align-items:center;
+  background-color: blue;
 }
