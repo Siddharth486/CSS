@@ -7,27 +7,32 @@
 }
 html {
   text-align: center;
+  color: white;
 }
 
 body {
-  padding: 10px;
-} 
-/* **specificity*
- * group selector sabse kam 
- * descendant or direct ki equal
-* */
-/* *(Descendant selector all para's inside div whether they are nested) div p * */
-div p{
-  color:blue;
+  padding: min(10px, 7%);
 }
 
-/* *Direct children div>p * */
-div > p{
-  color:rgb(75, 119, 75);
+.container {
+  border: 2px solid black;
+  gap: 5px;
+  display: grid;
+  grid-template-columns:150px 150px 150px 150px;
+  grid-template-rows:150px 150px 150px 150px;
+  /***for grid template area we have to give style: grid-area property***/
+  grid-template-areas: 
+  "card1 card2 card3 card4"
+  "card1 card5 card5 card4"
+  "card6 card5 card5 card7"
+  "card9 card9 card8 card7";
 }
 
-/* *group selector  div,p * */
-div,p{
-  color:orange;
+.card {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: blue;
+  border-radius: 5px;
 }
-
