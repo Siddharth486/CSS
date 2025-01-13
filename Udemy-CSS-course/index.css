@@ -7,39 +7,27 @@
 }
 html {
   text-align: center;
-  color: white;
 }
 
 body {
-  padding: min(10px, 7%);
+  padding: 10px;
+} 
+/* **specificity*
+ * group selector sabse kam 
+ * descendant or direct ki equal
+* */
+/* *(Descendant selector all para's inside div whether they are nested) div p * */
+div p{
+  color:blue;
 }
 
-.container {
-  border: 2px solid black;
-  gap: 5px;
-  display: grid;
-  grid-template-columns:150px 150px 150px;
-  grid-template-rows:150px 150px;
+/* *Direct children div>p * */
+div > p{
+  color:rgb(75, 119, 75);
 }
 
-.card {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  background-color: blue;
+/* *group selector  div,p * */
+div,p{
+  color:orange;
 }
 
-#card1{
-  /* grid-column-start: 1; **1st column line
-  grid-column-end: 3; **3rd column line */
-  /* ***shortcut */
-  grid-column:1/3
-}
-
-#card4{
-  /* grid-column-start:2;
-  grid-column-end:4; */
-  /* **shortcut */
-  grid-column:2/4;
-}
