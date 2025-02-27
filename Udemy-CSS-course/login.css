@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login__container {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  width: 50px auto;
+  height: auto;
+  text-align: center;
+}

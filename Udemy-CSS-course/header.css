@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: lightblue;
+  --text: white;
+  --nav-col: rgb(107, 155, 152);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-col);
+  height: 40px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0 10px;
+  text-transform: capitalize;
+  color: var(--text);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-list {
+  display: flex;
+}
+
+li:hover {
+  background-color: var(--color-1);
+  padding: 0 100%;
+}
